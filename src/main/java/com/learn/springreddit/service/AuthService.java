@@ -30,7 +30,7 @@ public class AuthService {
         User user = new User();
         user.setUsername(registerRequest.getUsername());
         user.setPassword(registerRequest.getPassword());
-        user.setEmailId(registerRequest.getEmailId());
+        user.setEmailId(registerRequest.getEmail());
         user.setEnabled(false);
         user.setCreatedOn(Instant.now());
         userRepository.save(user);
